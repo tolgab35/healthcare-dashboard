@@ -1,0 +1,44 @@
+.speciality-section {
+  padding: 32px 24px;
+  background: #f8fdff;
+  overflow-y: hidden;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0077b6;
+  font-weight: 600;
+}
+
+.speciality-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 16px;
+}
+
+.speciality-card {
+  background-color: #f1faff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.speciality-card:hover {
+  background-color: #caf0f8;
+}
+
+.speciality-card i {
+  font-size: 1.5rem;
+  color: #00b4d8;
+  margin-bottom: 8px;
+}
+
+.speciality-card span {
+  display: block;
+  font-weight: 500;
+  color: #333;
+}
