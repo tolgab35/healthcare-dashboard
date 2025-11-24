@@ -1,0 +1,326 @@
+.doctor-dashboard-bg {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #e0f7ff 0%, #f8fdff 100%);
+}
+
+.doctor-dashboard-main-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0, 119, 182, 0.1);
+  max-width: 700px;
+  margin: 48px auto 32px auto;
+  padding: 36px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.doctor-dashboard-title {
+  color: #0077b6;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.doctor-nav-btn {
+  padding: 8px 20px;
+  border: none;
+  background: #00b4d8;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 0 6px;
+}
+.doctor-nav-btn.active,
+.doctor-nav-btn:hover {
+  background: #0077b6;
+}
+
+.doctor-content {
+  background: #f1faff;
+  padding: 24px;
+  border-radius: 12px;
+  min-height: 220px;
+}
+
+.patient-detail-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+/* ---- DoctorCalendar BEM ve modern stiller ---- */
+.calendar-section {
+  grid-column: 1 / -1;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.calendar-section__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #023e8a;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+.calendar-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.calendar-section__card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0, 119, 182, 0.08);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-left: 4px solid #00b4d8;
+  transition: box-shadow 0.2s;
+}
+.calendar-section__card:hover {
+  box-shadow: 0 4px 18px rgba(0, 119, 182, 0.15);
+}
+.calendar-section__time {
+  font-weight: 500;
+  color: #0077b6;
+  font-size: 1.1rem;
+}
+.calendar-section__patient {
+  color: #333;
+  font-size: 1rem;
+}
+
+/* ---- PatientList BEM ve modern stiller ---- */
+.patient-list-section {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  grid-column: 1 / -1;
+}
+.patient-list-section__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #023e8a;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+.patient-list-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.patient-list-section__card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0, 119, 182, 0.08);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-left: 4px solid #48cae4;
+  transition: box-shadow 0.2s;
+}
+.patient-list-section__card:hover {
+  box-shadow: 0 4px 18px rgba(0, 119, 182, 0.15);
+}
+.patient-list-section__name {
+  font-weight: 500;
+  color: #0077b6;
+  font-size: 1.08rem;
+}
+.patient-list-section__button {
+  background: #00b4d8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.patient-list-section__button:hover {
+  background: #0077b6;
+}
+
+/* ---- DoctorProfile BEM ve modern stiller ---- */
+.profile-section {
+  margin-top: 12px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 119, 182, 0.08);
+  padding: 28px 28px 20px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  max-width: 420px;
+}
+.profile-section__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #023e8a;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+.profile-section__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile-section__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.profile-section__label {
+  color: #0077b6;
+  font-weight: 500;
+  min-width: 80px;
+}
+.profile-section__value {
+  color: #333;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+.profile-section__button {
+  background: #00b4d8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.2s;
+}
+.profile-section__button:hover {
+  background: #0077b6;
+}
+
+/* ---- Yeni ana container ve grid/flex düzeni ---- */
+.doctor-dashboard-main-container {
+  max-width: 1280px;
+  width: 95vw;
+  margin: 48px auto 32px auto;
+  padding: 40px 32px 32px 32px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 32px rgba(0, 119, 182, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Başlık kaldırıldığı için gap azaltıldı */
+}
+
+.doctor-dashboard-content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; /* Grid arası boşluk artırıldı, başlık boşluğu telafi edildi */
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 0; /* Başlık kaldırıldığı için margin-top sıfırlandı */
+}
+
+/* Her alt componentin (calendar, patient list, profile) grid hücresinde ferah görünmesi için */
+.calendar-section,
+.patient-list-section,
+.profile-section {
+  margin-top: 0;
+  min-width: 0;
+}
+
+/* ---- Profile sayfası için ortalama ve max-width ---- */
+.profile-section-wrapper {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+}
+.profile-section {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 119, 182, 0.08);
+  padding: 32px 32px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.profile-section__title {
+  text-align: center;
+  width: 100%;
+}
+.profile-section__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.profile-section__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  max-width: 400px;
+}
+.profile-section__button {
+  align-self: center;
+}
+
+/* Responsive: Tablet ve mobilde iki/tek sütuna düşsün */
+@media (max-width: 1000px) {
+  .doctor-dashboard-content-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+}
+@media (max-width: 700px) {
+  .doctor-dashboard-main-container {
+    padding: 16px 4vw 16px 4vw;
+    border-radius: 12px;
+  }
+  .doctor-dashboard-content-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 0;
+  }
+  .profile-section-wrapper {
+    padding: 12px 0;
+  }
+  .profile-section {
+    padding: 14px 8px 12px 8px;
+    max-width: 100%;
+  }
+  .profile-section__row {
+    max-width: 100%;
+    font-size: 0.98rem;
+  }
+}
