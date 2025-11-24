@@ -1,0 +1,17 @@
+.footer {
+  width: 100%;
+  background: #f1faff;
+  color: #0077b6;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: auto;
+  border-top: 1px solid #e0f7ff;
+}
+
+.footer-tagline {
+  font-size: 13px;
+  color: #555;
+  margin-top: 4px;
+}
