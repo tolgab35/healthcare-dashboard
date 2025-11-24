@@ -1,0 +1,36 @@
+.calendar-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8fdff;
+}
+
+.calendar-content {
+  max-width: 700px;
+  margin: 40px auto 32px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 119, 182, 0.08);
+  padding: 32px;
+}
+
+.calendar-title {
+  color: #0077b6;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.calendar-table th {
+  text-align: left;
+  padding: 8px;
+  color: #0077b6;
+  font-weight: 600;
+}
+.calendar-table td {
+  padding: 8px;
+  color: #333;
+}

@@ -1,0 +1,225 @@
+.profile-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #e0f7ff 0%, #f8fdff 100%);
+}
+
+.profile-content {
+  max-width: 900px;
+  margin: 40px auto 32px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 119, 182, 0.08);
+  padding: 32px 28px;
+}
+
+.profile-photo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 12px rgba(0, 119, 182, 0.08);
+  background: #f1faff;
+}
+
+.profile-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.profile-info-section h2 {
+  margin: 0 0 4px 0;
+  color: #0077b6;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.profile-email {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.profile-edit-btn,
+.profile-save-btn {
+  background: #00b4d8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-right: 8px;
+}
+.profile-edit-btn:hover,
+.profile-save-btn:hover {
+  background: #0077b6;
+}
+.profile-cancel-btn {
+  background: #eee;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.profile-cancel-btn:hover {
+  background: #ddd;
+}
+.profile-input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #00b4d8;
+  border-radius: 8px;
+  background: #f1faff;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 8px;
+}
+.profile-input:focus {
+  border-color: #0077b6;
+  background: #caf0f8;
+}
+
+.profile-main-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0, 119, 182, 0.1);
+  max-width: 600px;
+  margin: 48px auto 32px auto;
+  padding: 36px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.profile-card-top {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 0;
+}
+
+.profile-section-divider {
+  width: 100%;
+  height: 1px;
+  background: #e0f7ff;
+  margin: 28px 0 24px 0;
+  border-radius: 2px;
+}
+
+.profile-password-section {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  max-width: 100%;
+}
+.profile-password-section h3 {
+  margin: 0 0 12px 0;
+  color: #0077b6;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.profile-password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile-password-form input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #00b4d8;
+  border-radius: 8px;
+  background: #f1faff;
+  font-size: 1rem;
+  outline: none;
+}
+.profile-password-form input:focus {
+  border-color: #0077b6;
+  background: #caf0f8;
+}
+.profile-password-form button {
+  background: #00b4d8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 4px;
+}
+.profile-password-form button:hover {
+  background: #0077b6;
+}
+.profile-error {
+  color: #ef4444;
+  background: #fee2e2;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-top: 4px;
+}
+.profile-success {
+  color: #22c55e;
+  background: #e7fbe9;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.profile-appointments-section {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.profile-appointments-section h3 {
+  margin: 0 0 12px 0;
+  color: #0077b6;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.profile-appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+.profile-appointments-table th,
+.profile-appointments-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e0f7ff;
+  text-align: left;
+}
+.profile-appointments-table th {
+  color: #0077b6;
+  font-weight: 600;
+}
+.profile-appointments-table td {
+  color: #333;
+}
